@@ -1,0 +1,56 @@
+
+ROM used:   1634/32768 (5%)
+            1634/32768 (5%) including unused fragments
+
+            0.9 Average locations per line
+            6.6 Average locations per statement
+
+RAM used:   9/2048 (0%) at main() level
+            35/2048 (2%) worst case
+
+Stack used: 3 worst case (3 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   21     9   4  main.c
+   13     0   0  main.h
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18F4550.h
+  356    76  31  HDM64GS12M.c
+  540   163  66  C:\Program Files (x86)\PICC\Drivers\graphics.c
+----- -----
+ 1767   248 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   1    1             @delay_ms1
+0    124   4    1   555  3.4  glcd_init
+0    214   7    7   779  7.2  glcd_pixel
+0    114   3    4   506  4.8  glcd_fillScreen
+0     64   2    2   307  2.8  glcd_writeByte
+0     62   2    2   318  2.8  glcd_readByte
+0    272   8    0             @const665
+0    236   7    0             @const669
+0    404  12   20  1587 11.7  glcd_text57
+0    100   3    0   197  2.3  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               7
+    Statements              248
+    Comments                490
+    Volume (V)              6076
+    Difficulty (D)          34.3
+    Effort to implement (E) 208686
+    Time to implement (T)   3 hours, 13 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   18
+    Maintainability (MI)    97
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1630  31134  
+
+
+

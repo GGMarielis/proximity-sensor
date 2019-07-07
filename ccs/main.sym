@@ -1,0 +1,106 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-008 hola
+009     glcd_init.mode
+009     glcd_text57.x
+009     @delay_ms1.P1
+00A     glcd_text57.y
+00A     glcd_fillScreen.color
+00B-00C glcd_text57.textptr
+00B     glcd_fillScreen.i
+00C     glcd_fillScreen.j
+00D     glcd_text57.size
+00D     glcd_fillScreen.@SCRATCH1
+00E     glcd_text57.color
+00F     glcd_text57.j
+010     glcd_text57.k
+011     glcd_text57.l
+012     glcd_text57.m
+013-017 glcd_text57.pixelData
+018     glcd_text57.@SCRATCH1
+019     glcd_text57.@SCRATCH2
+01A     glcd_pixel.x
+01A     glcd_text57.@SCRATCH3
+01B     glcd_pixel.y
+01B     glcd_text57.@SCRATCH4
+01C     glcd_pixel.color
+01C     glcd_text57.@SCRATCH5
+01D     glcd_pixel.data
+01E.0   glcd_pixel.side
+01F     glcd_pixel.@SCRATCH1
+020     glcd_readByte.side
+020     glcd_pixel.@SCRATCH2
+021     glcd_readByte.data
+021     glcd_writeByte.side
+022     glcd_writeByte.data
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  FONT.call
+000014  FONT.data
+000114  FONT2.call
+000124  FONT2.data
+000200  glcd_writeByte
+000240  glcd_fillScreen
+0002B2  glcd_init
+00032E  glcd_readByte
+00036C  glcd_pixel
+000442  glcd_text57
+0005D6  @delay_ms1
+0005FE  MAIN
+0005FE  @cinit1
+00060E  @cinit2
+
+Project Directory:
+    D:\proyectos\programa\Prueba de pantalla grafica\
+
+Project Files:
+    main.c                                                  [05-feb-17 17:42  CRC=C13C8ABC]
+    main.h                                                  [05-feb-17 17:36  CRC=DC7C8500]
+    C:\Program Files (x86)\PICC\Devices\18F4550.h           [12-nov-13 14:35  CRC=5337E248]
+    HDM64GS12M.c                                            [25-ene-17 11:54  CRC=02687F6B]
+    C:\Program Files (x86)\PICC\Drivers\graphics.c          [06-jul-10 08:49  CRC=70BB89DE]
+
+Source signature=D4D0852B
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
